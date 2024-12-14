@@ -22,8 +22,14 @@
 <body style="background-color: rgb(239, 239, 239);">
 
   <!-- Navbar -->
-  <div class="w3-top" style="color: white;">
-    <div class="w3-bar w3-card" style="background-color:#9E1718;">
+<div class="w3-top" style="color: white;">
+  <div class="w3-bar w3-card" style="background-color:#9E1718; display: flex; align-items: center; justify-content: space-between;">
+    <!-- Logo (Yazı Şeklinde) -->
+    <div style="margin-left: 10px; font-size: 24px; font-weight: bold; font-family: 'Arial', sans-serif;">
+      ÖZKANLI HUKUK BÜROSU
+    </div>
+    <!-- Menu -->
+    <div style="display: flex; align-items: center;">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
         onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large">ANA SAYFA</a>
@@ -33,38 +39,46 @@
       <a href="#iletisim" class="w3-bar-item w3-button w3-padding-large w3-hide-small">İLETİŞİM</a>
     </div>
   </div>
+</div>
 
-  
+
+
   <!-- Page content -->
-  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <div class="w3-content" style="max-width:2000px; margin-top:46px;">
 
     <!-- Automatic Slideshow Images -->
-    <div class="mySlides w3-display-container w3-center">
-      <img src="https://www.etu.edu.tr/files/duyuru/2024/02/02/0d49fd18ac648d1ff1361328955001e1.jpg" style="width:100%">
+    <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
+      <img src="https://www.etu.edu.tr/files/duyuru/2024/02/02/0d49fd18ac648d1ff1361328955001e1.jpg" 
+           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
         <p><b>-Mahsun Karaca-</b></p>
       </div>
     </div>
-    <div class="mySlides w3-display-container w3-center">
-      <img src="https://mma.prnewswire.com/media/512043/Nyman_Turkish_PC.jpg?p=publish"
-        style="width:100%">
+
+    <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
+      <img src="https://mma.prnewswire.com/media/512043/Nyman_Turkish_PC.jpg?p=publish" 
+           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
         <p><b>-Mahsun Karaca-</b></p>
       </div>
     </div>
-    <div class="mySlides w3-display-container w3-center">
-      <img src="https://3dduvarkagitlari.com/Content/images/2021/5/20/l/3dduvarkagitlari-3b5fd565.jpg"
-        style="width:100%">
+
+    <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
+      <img src="https://3dduvarkagitlari.com/Content/images/2021/5/20/l/3dduvarkagitlari-3b5fd565.jpg" 
+           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
         <p><b>-Mahsun Karaca-</b></p>
       </div>
     </div>
+
+</div>
+
 
     <!-- The Band Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="hakkimizda">
@@ -335,7 +349,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('aile_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -391,7 +405,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('gayrimenkul_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -433,7 +447,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('miras_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -490,7 +504,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('ceza_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -537,7 +551,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('medeni_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -581,7 +595,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('icra_ve_iflas_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -643,7 +657,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('idare_ve_vergi_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -702,7 +716,7 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('iş_ve_sosyal_güvenlik_hukuku').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
@@ -757,63 +771,43 @@
           <button class="w3-button w3-red w3-section"
             onclick="document.getElementById('arabuluculuk').style.display='none'">Çıkış <i
               class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#contact" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
         </div>
       </div>
     </div>
-
-
-
     <!-- İletişim -->
     <div class="w3-container w3-padding-64" id="iletisim" style="background-color: rgb(239, 239, 239)">
       <h2 class="w3-wide w3-center">İLETİŞİM</h2>
       <p class="w3-opacity w3-center"><i>İstek ve Görüş Formu</i></p>
+      <p style="text-align: center; font-size: 125%;">
+        <i class="fa fa-map-marker" style="width:30px"></i> Hamdibey Mahalesi Tekçe Sokak No: 2 Biga /
+        Çanakkale<br>
+        <i class="fa fa-phone" style="width:30px"></i> 05424271779<br>
+        <i class="fa fa-phone" style="width:30px"></i> 05424271977<br>
+        <i class="fa fa-envelope" style="width:30px"> </i>ozkanlihukukburosu@gmail.com<br>
+      </p>
 
-      <div class="w3-row w3-padding-32" style="display: flex; justify-content: center; align-items: center;">
-        <div class="w3-col m6" style="max-width: 450px; width: 100%;">
-          <form action="/action_page.php" target="_blank">
-            <div class="w3-row-padding" style="margin: 0;">
-              <div class="w3-half" style="padding: 8px; width: 100%;">
-                <input class="w3-input w3-border" type="text" placeholder="Adınız Soyadınız" required
-                  name="Adınız Soyadınız">
-              </div>
-              <div class="w3-half" style="padding: 8px; width: 100%">
-                <input class="w3-input w3-border" type="text" placeholder="Telefon Numarası" required
-                  name="Telefon Numarası">
-              </div>
-            </div>
-            <div class="w3-row-padding" style="margin: 8px 0; width: 100%;">
-              <div class="w3-half" style="padding: 8px; width: 100%;">
-                <input class="w3-input w3-border" type="text" placeholder="Konu" required name="Konu">
-              </div>
-            </div>
-            <div style="padding: 8px;">
-              <input class="w3-input w3-border" type="text" placeholder="Mesaj" required name="Mesaj"
-                style="height: 200px;">
-            </div>
-            <button class="w3-button w3-black w3-section w3-right" type="submit"
-              style="margin-top: 16px;">Gönder</button>
-          </form>
-        </div>
-      </div>
     </div>
 
+    <!--Google Harita-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.122814508301!2d27.237771475817546!3d40.228571471470495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b6b3938febc671%3A0x50e72adf795c9934!2sHamdibey%2C%20Tek%C3%A7e%20Sk.%20No%3A2%2C%2017200%20Biga%2F%C3%87anakkale!5e0!3m2!1str!2str!4v1734130934145!5m2!1str!2str"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- End Page Content -->
   </div>
 
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-xlarge" style="background-color: rgb(58, 58, 58);">
-    <div style="color: white;">
-      <p class="w3-wide w3-center">
-      <h2>İletişim Bilgilerimiz</h2>
-      </p>
-      <i class="fa fa-map-marker" style="width:30px"></i> Sakarya Mah. Kıbrıs Şehitleri Cad. No:46 K:1 D:4 Biga /
-      Çanakkale<br>
-      <i class="fa fa-phone" style="width:30px"></i> 05424271779<br>
-      <i class="fa fa-phone" style="width:30px"></i> 05424271779<br>
-      <i class="fa fa-envelope" style="width:30px"> </i>ozkanlihukukburosu@gmail.com<br>
-    </div>
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge"
+    style="background-color: black; color: white;">
+    <a href="https://www.facebook.com/profile.php?id=100004436345170&viewas=&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true&locale=tr_TR"
+      target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/egmnozknli/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://x.com/egmnozknli" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/egemen-%C3%B6zkanl%C4%B1-123968258/" target="_blank"><i
+        class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by Egemen Özkanlı</p>
   </footer>
 
 
@@ -833,17 +827,6 @@
       x[myIndex - 1].style.display = "block";
       setTimeout(carousel, 4000);
     }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-
     // When the user clicks anywhere outside of the modal, close it
     var modal = document.getElementById('ticketModal');
     window.onclick = function (event) {
