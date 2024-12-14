@@ -10,37 +10,79 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
-      font-family: "Lato", sans-serif
+      font-family: "Lato", sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     .mySlides {
-      display: none
+      display: none;
     }
+
+    /* Menü stilizasyonu */
+    .w3-bar-item {
+      color: white;
+    }
+
+    .w3-bar {
+      background-color: #9E1718;
+    }
+
+    /* Mobil menü */
+    @media screen and (max-width: 600px) {
+      .w3-bar {
+        flex-direction: column;
+      }
+
+      .w3-bar-item {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .w3-bar .w3-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .w3-bar-item.w3-right {
+        display: none;
+      }
+
+      .w3-bar .w3-button {
+        text-align: center;
+      }
+
+      .w3-bar-item.w3-hide-medium,
+      .w3-bar-item.w3-hide-large {
+        display: none;
+      }
+    }
+
   </style>
 </head>
 
 <body style="background-color: rgb(239, 239, 239);">
 
   <!-- Navbar -->
-<div class="w3-top" style="color: white;">
-  <div class="w3-bar w3-card" style="background-color:#9E1718; display: flex; align-items: center; justify-content: space-between;">
-    <!-- Logo (Yazı Şeklinde) -->
-    <div style="margin-left: 10px; font-size: 24px; font-weight: bold; font-family: 'Arial', sans-serif;">
-      ÖZKANLI HUKUK BÜROSU
-    </div>
-    <!-- Menu -->
-    <div style="display: flex; align-items: center;">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">ANA SAYFA</a>
-      <a href="#hakkimizda" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HAKKIMIZDA</a>
-      <a href="#calisma_alanlarimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ÇALIŞMA ALANLARIMIZ</a>
-      <a href="#ekibimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EKİBİMİZ</a>
-      <a href="#iletisim" class="w3-bar-item w3-button w3-padding-large w3-hide-small">İLETİŞİM</a>
+  <div class="w3-top" style="color: white;">
+    <div class="w3-bar w3-card" style="display: flex; align-items: center; justify-content: space-between;">
+      <!-- Logo (Yazı Şeklinde) -->
+      <div style="margin-left: 10px; font-size: 24px; font-weight: bold; font-family: 'Arial', sans-serif;">
+        ÖZKANLI HUKUK BÜROSU
+      </div>
+      <!-- Menu -->
+      <div style="display: flex; align-items: center;">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+          onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">ANA SAYFA</a>
+        <a href="#hakkimizda" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HAKKIMIZDA</a>
+        <a href="#calisma_alanlarimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ÇALIŞMA ALANLARIMIZ</a>
+        <a href="#ekibimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EKİBİMİZ</a>
+        <a href="#iletisim" class="w3-bar-item w3-button w3-padding-large w3-hide-small">İLETİŞİM</a>
+      </div>
     </div>
   </div>
-</div>
-
 
 
   <!-- Page content -->
@@ -832,6 +874,16 @@
     window.onclick = function (event) {
       if (event.target == modal) {
         modal.style.display = "none";
+      }
+    }
+
+    function myFunction() 
+    {
+      var x = document.getElementsByClassName("w3-bar")[0];
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
       }
     }
   </script>
