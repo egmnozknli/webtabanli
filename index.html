@@ -28,37 +28,13 @@
       background-color: #9E1718;
     }
 
-    /* Mobil menü */
-    @media screen and (max-width: 600px) {
-      .w3-bar {
-        flex-direction: column;
-      }
-
-      .w3-bar-item {
-        padding: 10px;
-        text-align: center;
-      }
-
-      .w3-bar .w3-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-
-      .w3-bar-item.w3-right {
-        display: none;
-      }
-
-      .w3-bar .w3-button {
-        text-align: center;
-      }
-
-      .w3-bar-item.w3-hide-medium,
-      .w3-bar-item.w3-hide-large {
-        display: none;
-      }
+    .img-equal {
+      width: 100%;
+      height: 300px;
+      /* İstediğiniz sabit bir yükseklik */
+      object-fit: cover;
+      /* Görselleri kırpmadan ya da bozmadan doldurur */
     }
-
   </style>
 </head>
 
@@ -73,11 +49,12 @@
       </div>
       <!-- Menu -->
       <div style="display: flex; align-items: center;">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-          onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">ANA SAYFA</a>
         <a href="#hakkimizda" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HAKKIMIZDA</a>
-        <a href="#calisma_alanlarimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ÇALIŞMA ALANLARIMIZ</a>
+        <a href="#calisma_alanlarimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ÇALIŞMA
+          ALANLARIMIZ</a>
         <a href="#ekibimiz" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EKİBİMİZ</a>
         <a href="#iletisim" class="w3-bar-item w3-button w3-padding-large w3-hide-small">İLETİŞİM</a>
       </div>
@@ -90,8 +67,8 @@
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
-      <img src="https://www.etu.edu.tr/files/duyuru/2024/02/02/0d49fd18ac648d1ff1361328955001e1.jpg" 
-           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
+      <img src="https://www.etu.edu.tr/files/duyuru/2024/02/02/0d49fd18ac648d1ff1361328955001e1.jpg"
+        style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
@@ -100,8 +77,8 @@
     </div>
 
     <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
-      <img src="https://mma.prnewswire.com/media/512043/Nyman_Turkish_PC.jpg?p=publish" 
-           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
+      <img src="https://mma.prnewswire.com/media/512043/Nyman_Turkish_PC.jpg?p=publish"
+        style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
@@ -110,8 +87,8 @@
     </div>
 
     <div class="mySlides w3-display-container w3-center" style="position: relative; width: 100%; height: 700px;">
-      <img src="https://3dduvarkagitlari.com/Content/images/2021/5/20/l/3dduvarkagitlari-3b5fd565.jpg" 
-           style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
+      <img src="https://3dduvarkagitlari.com/Content/images/2021/5/20/l/3dduvarkagitlari-3b5fd565.jpg"
+        style="width: 100%; height: 100%; object-fit: cover; object-position: top 20%;">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>Özkanlı Hukuk ve Arabuluculuk Bürosu</h3>
         <p><b>Hakim sana inanmayabilir ama biz sana inanıyoruz.</b></p>
@@ -119,724 +96,728 @@
       </div>
     </div>
 
-</div>
+  </div>
 
 
-    <!-- The Band Section -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="hakkimizda">
-      <H2 class="w3-wide w3-center"> ÖZKANLI HUKUK VE ARABULUCULUK BÜROSU</i> </H2>
-      <p class="w3-opacity">Tecrübeli ve dinamik ekibimiz ile birlikte siz değerli müvekkillerimize hukuk ve
-        arabuluculuk alanında çözümler üretmekteyiz...
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="hakkimizda">
+    <H2 class="w3-wide w3-center"> ÖZKANLI HUKUK VE ARABULUCULUK BÜROSU</i> </H2>
+    <p class="w3-opacity">Tecrübeli ve dinamik ekibimiz ile birlikte siz değerli müvekkillerimize hukuk ve
+      arabuluculuk alanında çözümler üretmekteyiz...
 
-      </p>
-      <p class="w3-justify">Özkanlı Hukuk Bürosu,Çanakkale Biga merkezli bir avukatlık bürosu olup Türkiye genelinde
-        müvekkillerine avukatlık ve hukuki danışmanlık hizmetleri sunmaktadır. <br>
+    </p>
+    <p class="w3-justify">Özkanlı Hukuk Bürosu,Çanakkale Biga merkezli bir avukatlık bürosu olup Türkiye genelinde
+      müvekkillerine avukatlık ve hukuki danışmanlık hizmetleri sunmaktadır. <br>
 
-        Tecrübeli ve dinamik ekibimiz ile hukuk büromuz dava avukatlığı ve hukuki danışmanlık faaliyetlerinin yanı sıra
-        adli yargılamaya alternatif çözüm yolu olan hukuk uyuşmazlıklarında Arabuluculuk faaliyetlerini de
-        yürütmektedir. <br>
+      Tecrübeli ve dinamik ekibimiz ile hukuk büromuz dava avukatlığı ve hukuki danışmanlık faaliyetlerinin yanı sıra
+      adli yargılamaya alternatif çözüm yolu olan hukuk uyuşmazlıklarında Arabuluculuk faaliyetlerini de
+      yürütmektedir. <br>
 
-        Müvekkillerimizin ihtiyaçlarına daha doğru ve etkin çözümler üretebilmek için faaliyet gösterdikleri
-        sektörlerdeki gelişmeleri yakından takip etmekteyiz. <br>
+      Müvekkillerimizin ihtiyaçlarına daha doğru ve etkin çözümler üretebilmek için faaliyet gösterdikleri
+      sektörlerdeki gelişmeleri yakından takip etmekteyiz. <br>
 
-        Hukuk alanında bölgesinde saygı ve güvene sahip olan büromuz,sektöründe gerekli tüm inovatif ve teknolojik
-        standartları yakalamış olup,müvekkillerinin ihtiyaç ve beklentilerine cevap verecek şekilde geçerli yasal
-        düzenlemelere uygun düzeyde kaliteli hizmet sunmaktadır.</p>
-    </div>
+      Hukuk alanında bölgesinde saygı ve güvene sahip olan büromuz,sektöründe gerekli tüm inovatif ve teknolojik
+      standartları yakalamış olup,müvekkillerinin ihtiyaç ve beklentilerine cevap verecek şekilde geçerli yasal
+      düzenlemelere uygun düzeyde kaliteli hizmet sunmaktadır.</p>
+  </div>
 
-    <!-- The Tour Section -->
-    <div id="calisma_alanlarimiz" style="background-color: black;">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center" style="color: white;">ÇALIŞMA ALANLARIMIZ</h2>
-        <p class="w3-opacity w3-center style= color: white;"><i>Hukuki Danışmanlık olarak hizmet verdiğimizi çalışma
-            alanlarımız...</i></p>
-        <br>
+  <!-- The Tour Section -->
+  <div id="calisma_alanlarimiz" style="background-color: black;">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" style="color: white;">ÇALIŞMA ALANLARIMIZ</h2>
+      <p class="w3-opacity w3-center style= color: white;"><i>Hukuki Danışmanlık olarak hizmet verdiğimizi çalışma
+          alanlarımız...</i></p>
+      <br>
 
-        <div class="w3-row-padding w3-padding-32" style="margin: 0 -35px;">
-          <div class="w3-third w3-margin-bottom">
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -35px;">
+        <div class="w3-third w3-margin-bottom">
 
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Aile Hukuku" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Aile Hukuku</b></p>
-              <p>Toplumun en küçük yapı taşı olan aile,toplum için büyük önem taşımaktadır.Aile içindeki eylem ve
-                davranışlar toplum içindeki durumlar ile birebir bağlantılı olup toplumun huzurlu ve mutlu bir şekilde
-                sürdürülebilmesi için aile içi ilişkiler son derece önemlidir.Bir toplumun geleceği öncelikle aile
-                bireylerinin birbirleri ile olan ilişkilerine bağlı olarak sürdürülebilir hale gelmektedir.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('aile_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Aile Hukuku" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Aile Hukuku</b></p>
+            <p>Toplumun en küçük yapı taşı olan aile,toplum için büyük önem taşımaktadır.Aile içindeki eylem ve
+              davranışlar toplum içindeki durumlar ile birebir bağlantılı olup toplumun huzurlu ve mutlu bir şekilde
+              sürdürülebilmesi için aile içi ilişkiler son derece önemlidir.Bir toplumun geleceği öncelikle aile
+              bireylerinin birbirleri ile olan ilişkilerine bağlı olarak sürdürülebilir hale gelmektedir.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('aile_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Gayrimenkul Hukuku"
-              style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Gayrimenkul Hukuku</b></p>
-              <p>Gayrimenkul hukuku geniş bir alana sahip olup gayrimenkul dava türleri olarak geçen taşınmazlara ait
-                davaların birçok alt alanı bulunmaktadır. Gayrimenkul davaları eşya hukukunun bir alt
-                dalıdır.Arsa,ev,apartman,daire gibi taşınmazlar ile ilgili davalara bakılmaktadır.Gayrimenkul hukuku
-                genel anlamda gayrimenkuller ile ilgili hukuka aykırı olan durumların düzeltilmesi amaçlanmaktadır.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('gayrimenkul_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Gayrimenkul Hukuku"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Gayrimenkul Hukuku</b></p>
+            <p>Gayrimenkul hukuku geniş bir alana sahip olup gayrimenkul dava türleri olarak geçen taşınmazlara ait
+              davaların birçok alt alanı bulunmaktadır. Gayrimenkul davaları eşya hukukunun bir alt
+              dalıdır.Arsa,ev,apartman,daire gibi taşınmazlar ile ilgili davalara bakılmaktadır.Gayrimenkul hukuku
+              genel anlamda gayrimenkuller ile ilgili hukuka aykırı olan durumların düzeltilmesi amaçlanmaktadır.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('gayrimenkul_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Miras Hukuku" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Miras Hukuku</b></p>
-              <p>Özkanlı Hukuk Bürosu,miras hukukunun bütün aşamalarına ilişkin olarak müvekkillerine gerek danışmanlık
-                hizmeti gerekse dava takibi konusunda hizmet sağlamaktadır.Miras hukuku alanındaki hizmetlerimiz,miras
-                hukukundan doğan uyuşmazlıkların duruma en uygun hale getirilmesinin haricinde uyuşmazlık doğmadan
-                önceki önleyici hizmetleri de kapsamaktadır.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('miras_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Miras Hukuku" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Miras Hukuku</b></p>
+            <p>Özkanlı Hukuk Bürosu,miras hukukunun bütün aşamalarına ilişkin olarak müvekkillerine gerek danışmanlık
+              hizmeti gerekse dava takibi konusunda hizmet sağlamaktadır.Miras hukuku alanındaki hizmetlerimiz,miras
+              hukukundan doğan uyuşmazlıkların duruma en uygun hale getirilmesinin haricinde uyuşmazlık doğmadan
+              önceki önleyici hizmetleri de kapsamaktadır.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('miras_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Ceza Hukuku" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Ceza Hukuku</b></p>
-              <p>Ceza hukukunun temel iki konusu ceza ve suçlardır.Bireysel çıkarları koruma gereği,toplumsal düzeni
-                sağlama,devlet tarafından belirlenen davranışları yapma ve bunlardan istenmeyenlerden kaçınma konusunda
-                bireylere emirler vermeye ve verilen emirlere uymayanlar için yaptırımlar öngörmeye yönelmiştir.Ceza
-                hukuku da belirlenen yasalar ile emirleri ve yaptırımları inceleyen hukuk alanıdır.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('ceza_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Ceza Hukuku" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Ceza Hukuku</b></p>
+            <p>Ceza hukukunun temel iki konusu ceza ve suçlardır.Bireysel çıkarları koruma gereği,toplumsal düzeni
+              sağlama,devlet tarafından belirlenen davranışları yapma ve bunlardan istenmeyenlerden kaçınma konusunda
+              bireylere emirler vermeye ve verilen emirlere uymayanlar için yaptırımlar öngörmeye yönelmiştir.Ceza
+              hukuku da belirlenen yasalar ile emirleri ve yaptırımları inceleyen hukuk alanıdır.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ceza_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Medeni Hukuk" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Medeni Hukuk</b></p>
-              <p>Kişilerin birbiriyle olan ve ya belirli ölçülerde kişilerle devletin dolaylı ya da doğrudan özel
-                ilişkilerinin kamu hukuku dışında kalan hukuk dalına medeni hukuk adı verilmektedir.Medeni hukuk,özel
-                hukuk denilince akla gelmektedir.Temeli ise 1926 tarihli 818 sayılı Borçlar Kanunu ve 2002 tarihli 4721
-                sayılı Medeni Hukuk’tur.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('medeni_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Medeni Hukuk" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Medeni Hukuk</b></p>
+            <p>Kişilerin birbiriyle olan ve ya belirli ölçülerde kişilerle devletin dolaylı ya da doğrudan özel
+              ilişkilerinin kamu hukuku dışında kalan hukuk dalına medeni hukuk adı verilmektedir.Medeni hukuk,özel
+              hukuk denilince akla gelmektedir.Temeli ise 1926 tarihli 818 sayılı Borçlar Kanunu ve 2002 tarihli 4721
+              sayılı Medeni Hukuk’tur.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('medeni_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İcra ve İflas Hukuku"
-              style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>İcra ve İflas Hukuku</b></p>
-              <p>Özkanlı Hukuk Bürosu olarak icra ve iflas hukuku alanında uzman ekibimiz,alacakları tahsil etme
-                konusunda hukuki yardım alma ihtiyacı duyan şirketlerin,bankaların veya bireylerin uluslararası
-                kanunlarla korunan alacakları da dahil olmak üzere alacakların icra takibi ile tahsili ve icra
-                takiplerinden doğan her türlü dava işlemlerini gerçekleştirme amacıyla faaliyet göstermekteyiz.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('icra_ve_iflas_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İcra ve İflas Hukuku"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>İcra ve İflas Hukuku</b></p>
+            <p>Özkanlı Hukuk Bürosu olarak icra ve iflas hukuku alanında uzman ekibimiz,alacakları tahsil etme
+              konusunda hukuki yardım alma ihtiyacı duyan şirketlerin,bankaların veya bireylerin uluslararası
+              kanunlarla korunan alacakları da dahil olmak üzere alacakların icra takibi ile tahsili ve icra
+              takiplerinden doğan her türlü dava işlemlerini gerçekleştirme amacıyla faaliyet göstermekteyiz.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('icra_ve_iflas_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İdare ve Vergi Hukuku"
-              style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>İdare ve Vergi Hukuku</b></p>
-              <p>İdare ve Vergi Hukuku idare ile bireyler arasındaki hukuki ilişkileri düzenleyen hukuk alanına verilen
-                addır.İdarenin tüm işlem ve eylemlerinin hukuki denetime tabi tutulması ve hukuka uygun olması “hukuk
-                devleti” olabilmenin başlıca unsurudur.İdare,hukuk devletinin gereği olarak,tesis ettiği idari
-                işlemlerde ve tüm eylemlerinde kanuna bağlı kalmak ve hukukun genel ilkelerine uygun hareket etmekle
-                yükümlüdür.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('idare_ve_vergi_hukuku').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İdare ve Vergi Hukuku"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>İdare ve Vergi Hukuku</b></p>
+            <p>İdare ve Vergi Hukuku idare ile bireyler arasındaki hukuki ilişkileri düzenleyen hukuk alanına verilen
+              addır.İdarenin tüm işlem ve eylemlerinin hukuki denetime tabi tutulması ve hukuka uygun olması “hukuk
+              devleti” olabilmenin başlıca unsurudur.İdare,hukuk devletinin gereği olarak,tesis ettiği idari
+              işlemlerde ve tüm eylemlerinde kanuna bağlı kalmak ve hukukun genel ilkelerine uygun hareket etmekle
+              yükümlüdür.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('idare_ve_vergi_hukuku').style.display='block'">Devamını Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İş ve Sosyal Güvenlik Hukuku"
-              style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>İş ve Sosyal Güvenlik Hukuku</b></p>
-              <p>Devlet,işçi ve işveren arasındaki ilişkileri inceleyen,düzenleyen ve sonuca bağlayan kamu ve özel
-                hukuku dalı iş hukuku olarak tanımlanmaktadır</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('iş_ve_sosyal_güvenlik_hukuku').style.display='block'">Devamını
-                Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="İş ve Sosyal Güvenlik Hukuku"
+            style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>İş ve Sosyal Güvenlik Hukuku</b></p>
+            <p>Devlet,işçi ve işveren arasındaki ilişkileri inceleyen,düzenleyen ve sonuca bağlayan kamu ve özel
+              hukuku dalı iş hukuku olarak tanımlanmaktadır</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('iş_ve_sosyal_güvenlik_hukuku').style.display='block'">Devamını
+              Oku</button>
           </div>
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Arabuluculuk" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white" style="height: 460px;">
-              <p><b>Arabuluculuk</b></p>
-              <p>Alternatif bir uyuşmazlık çözüm yöntemi olan arabuluculuk Avrupa’da ve Amerika’da 40 yılı aşkın bir
-                süredir uygulanmaktadır.Arabuluculuk,taraflar arasında davaya konu olmuş veya olabilecek bir uyuşmazlığı
-                bir arabulucu eşliğinde karşılıklı olarak müzakere ederek çözüme kavuşturulan bir süreçtir.Uyuşmazlığın
-                mahkeme dışı,kesin ve hızlı bir şekilde çözülmesini amaçlayan bir usul hukuku kurumudur.</p>
-              <button class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('arabuluculuk').style.display='block'">Devamını Oku</button>
-            </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Arabuluculuk" style="width:100%"
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white" style="height: 460px;">
+            <p><b>Arabuluculuk</b></p>
+            <p>Alternatif bir uyuşmazlık çözüm yöntemi olan arabuluculuk Avrupa’da ve Amerika’da 40 yılı aşkın bir
+              süredir uygulanmaktadır.Arabuluculuk,taraflar arasında davaya konu olmuş veya olabilecek bir uyuşmazlığı
+              bir arabulucu eşliğinde karşılıklı olarak müzakere ederek çözüme kavuşturulan bir süreçtir.Uyuşmazlığın
+              mahkeme dışı,kesin ve hızlı bir şekilde çözülmesini amaçlayan bir usul hukuku kurumudur.</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('arabuluculuk').style.display='block'">Devamını Oku</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--EKİBİMİZ-->
-    <div id="ekibimiz" style="background-color: rgb(58,58,58);">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center" style="color: white;">EKİBİMİZ</h2>
-        <br>
+  <!--EKİBİMİZ-->
+  <div id="ekibimiz" style="background-color: rgb(58,58,58);">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" style="color: white;">EKİBİMİZ</h2>
+      <br>
 
-        <div class="w3-row-padding w3-padding-32" style="margin: 0 -35px;">
+      <div class="w3-row-padding w3-padding-32" style="margin: 0 -35px;">
 
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Avukat" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>Av. Arb. Egemen Özkanlı</b></p>
-              <p>Kurucu Avukat</p>
-            </div>
-          </div>
-
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Avukat" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>Av. Arb. Sudenaz Aydoğdu</b></p>
-              <p>Kurucu Avukat</p>
-            </div>
-          </div>
-
-          <div class="w3-third w3-margin-bottom">
-            <img src="https://www.logoloji.com/wp-content/uploads/2018/12/48.png" alt="Avukat" style="width:100%"
-              class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>Serhat Taşdelen</b></p>
-              <p>Avukat Katibi/İcra Saha Personeli</p>
-            </div>
+        <div class="w3-third w3-margin-bottom">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQGG70Ucsc4rBw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720888745741?e=1740009600&v=beta&t=Mx3PvoTz5oiGCQChaWt6IFO-nMCsWPdZU2dPZL-fPHY"
+            alt="Avukat" class="w3-hover-opacity img-equal">
+          <div class="w3-container w3-white">
+            <p><b>Av. Arb. Egemen Özkanlı</b></p>
+            <p>Kurucu Avukat</p>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Aile Hukuku -->
-    <div id="aile_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Aile Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>Toplumun en küçük yapı taşı olan aile,toplum için büyük önem taşımaktadır.Aile içindeki eylem ve
-            davranışlar toplumun gelişmişlik düzeyi ile birebir bağlantılı olup toplumun huzurlu ve mutlu bir şekilde
-            sürdürülebilmesi için aile içi ilişkiler son derece önem arzetmektedir.Bir toplumun geleceğinin doğru bir
-            şekilde inşaası ancak aile bireylerinin birbirleri ile olan ilişkilerine bağlı olarak sürdürülebilir hale
-            gelecektir. <br>
+        <div class="w3-third w3-margin-bottom">
+          <img src="http://meteokan.pau.edu.tr/img/M1.jpg" alt="Avukat" class="w3-hover-opacity img-equal">
+          <div class="w3-container w3-white">
+            <p><b>Av. Arb. Mete Okan Erdoğan</b></p>
+            <p>Avukat</p>
+          </div>
+        </div>
 
-            Genel olarak her türlü konu ve alanda özel ve ayrıntılı kollara ayrılan hukuk,toplum içerisindeki düzeni
-            sağlamaktadır.Aile içi ilişkileri düzene sokan ve süreç dahilinde bulunan hukuk kurallarını da dikkate alan
-            hukuk dalına aile hukuku adı verilmektedir.<br>
-
-            Aile hukukunun özgülendiği amaç, aile içi ilişkilerin kamu düzeni dikkate alınarak düzenlenmesidir.4721
-            Sayılı Türk Medeni Kanunu kapsamıdan aile hukuku çeşit alt konuları incelenmektedir.Aile hukukunun başlıca
-            konuları;<br>
-
-            Evlenme,<br>
-
-            Boşanma koşulları ve sonuçları,<br>
-
-            Nişanlanma,<br>
-
-            Evlat edinme,<br>
-
-            Mal rejimi,<br>
-
-            Aile konutu,<br>
-
-            Soybağı,<br>
-
-            Velayet,<br>
-
-            Çocuğun nafaka hakkı,<br>
-
-            Yasal danışmanlık,<br>
-
-            Kayyımlık gibi alt konuları incelenmektedir.<br>
-
-            Aile Hukuku Neden Olmalı?<br>
-
-            Türk Medeni Kanuna göre düzenlenmiş olan aile hukukuna ilişkin uyuşmazlıkları gidermek Aile Mahkemelerinin
-            görev alanına girmektedir.Aile bireylerinin birbirlerine olan tutumlarını belirlemede ve her bireyin kendi
-            sorumluluklarının bilincinde olması aile hukukuna ilişkin normlar ile sağlanmaktadır.<br>
-
-            Boşanma sebebi her ne olursa olsun bütün boşanma davaları Aile Mahkemelerinde açılması zorunludur.Ayrıca
-            Aile Mahkemlerinin olmadığı yerlerde Asliye Hukuk Mahkemeleri de Aile Mahkemesi sıfatı ile ayrılık ve
-            boşanma davalarına bakmakta görevlidirler.<br>
-
-            Biz Neler Yapıyoruz?<br>
-
-            Mutlu Hukuk Bürosu olarak müvekkillerimiz doğrultusunda<br>
-
-            Çekişmeli Boşanma Davaları,<br>
-
-            Anlaşmalı Boşanma Davaları,<br>
-
-            Anlaşmalı Boşanma Protokolü,<br>
-
-            Nafaka Ve Tazminat Talepleri,<br>
-
-            Evlilik İptali Davaları,<br>
-
-            Evlilik Sözleşmesi Ve Mal Rejimi,<br>
-
-            Velayetin Değiştirilmesi,<br>
-
-            Babalık Davası gibi aile hukukunu ele alan bütün konularda hizmet vermekteyiz.<br>
-
-            Aile Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Biga Özkanlı Hukuk Bürosu
-            ile iletişime geçebilirsiniz</p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('aile_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+        <div class="w3-third w3-margin-bottom">
+          <img
+            src="https://static.wixstatic.com/media/22a9ba_e6a2852f75f54f7eb8e25c42654d9ae8~mv2.jpg/v1/fill/w_613,h_576,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/22a9ba_e6a2852f75f54f7eb8e25c42654d9ae8~mv2.jpg"
+            alt="Avukat" class="w3-hover-opacity img-equal">
+          <div class="w3-container w3-white">
+            <p><b>Av. Arb. Metehan Olcay Erdoğan</b></p>
+            <p>Stajyer Avukat</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Gayrimenkul Hukuku -->
-    <div id="gayrimenkul_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Gayrimenkul Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>Gayrimenkul hukuku geniş bir alana sahip olup gayrimenkul dava türleri olarak geçen taşınmazlara ait
-            davaların birçok alt alanı bulunmaktadır. Gayrimenkul davaları eşya hukukunun bir alt
-            dalıdır.Arsa,ev,apartman,daire gibi taşınmazlar ile ilgili davalara bakılmaktadır.Gayrimenkul hukuku genel
-            anlamda gayrimenkuller ile ilgili hukuka aykırı olan durumların düzeltilmesi amaçlanmaktadır. <br>
 
-            Mutlu Hukuk Bürosu olarak , büyük ölçekli gayrimenkul geliştirme projeleri olmak üzere planlaması, , satın
-            alınması veya kiralanması,projelerin imarı, idari yükümlülükleri dahil gayrimenkul üzerinde yaşanan ve her
-            türlü ayni ve şahsi uyuşmazlıklar konusunda hukuki hizmetleri sağlamaktadır.<br>
 
-            Gayrimenkul Davasında Avukat Tutmak Zorunlu mu?<br>
 
-            Hukuka aykırı olan gayrimenkul üzerinde usulsüz olan sorunların çözülmesi taşınmazlara ait davalarda,diğer
-            davalarda olduğu gibi avukat tutma zorunluluğunuz yoktur.Dava sürecindeki taraflar kendileri davaları açarak
-            takip edebilmektedirler.Fakat gayrimenkul davaları birçok teknik boyutu olup çok uzun süren ve sık takip
-            edilmesi gereken davalardan biri olduğu için tarafların yapacakları en küçük bir usul hatası davanın
-            kaybedilmesine neden olabilir.Gayrimenkul davalarının önemi nedeniyle uzman avukat vasıtasıyla davanın takip
-            edilmesi tarafların yapacakları muhtemel hataları ortadan kaldıracaktır.<br>
+  <!-- Aile Hukuku -->
+  <div id="aile_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Aile Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>Toplumun en küçük yapı taşı olan aile,toplum için büyük önem taşımaktadır.Aile içindeki eylem ve
+          davranışlar toplumun gelişmişlik düzeyi ile birebir bağlantılı olup toplumun huzurlu ve mutlu bir şekilde
+          sürdürülebilmesi için aile içi ilişkiler son derece önem arzetmektedir.Bir toplumun geleceğinin doğru bir
+          şekilde inşaası ancak aile bireylerinin birbirleri ile olan ilişkilerine bağlı olarak sürdürülebilir hale
+          gelecektir. <br>
 
-            Ayrıca gayrimenkul avukatları,taşınmaz davalarınıza bakabildiğin gibi ileri ki dönemlerden sorun yaşamamanız
-            için danışmanlık hizmeti de vermektedir.Alım satımlarınızda,kira sözleşmelerinizde,gayrimenkul
-            değerlendirilmesi ile ilgili bilgiler için de birlikte çalışabiliriz.Taşınmazlara ait davalar uzun soluklu
-            bir dava türü olduğunda uzman avukatlar ile çalışmanız davalarınız için önemli bir etkendir.<br>
+          Genel olarak her türlü konu ve alanda özel ve ayrıntılı kollara ayrılan hukuk,toplum içerisindeki düzeni
+          sağlamaktadır.Aile içi ilişkileri düzene sokan ve süreç dahilinde bulunan hukuk kurallarını da dikkate alan
+          hukuk dalına aile hukuku adı verilmektedir.<br>
 
-            Gayrimenkul Hukuku Hangi Konuları Kapsar?<br>
+          Aile hukukunun özgülendiği amaç, aile içi ilişkilerin kamu düzeni dikkate alınarak düzenlenmesidir.4721
+          Sayılı Türk Medeni Kanunu kapsamıdan aile hukuku çeşit alt konuları incelenmektedir.Aile hukukunun başlıca
+          konuları;<br>
 
-            Gayrimenkul hukuku taşınmazlarınız ile ilgili olarak tarla, arsa, bina ve diğer taşınmazlar üzerine bakılan
-            davaları kapsamaktadır.Taşınmaz dava türleri;<br>
+          Evlenme,<br>
 
-            istihkak davaları,<br>
+          Boşanma koşulları ve sonuçları,<br>
 
-            kamulaştırma davaları ,<br>
+          Nişanlanma,<br>
 
-            Tapu ve tescil davaları başta olmak üzere,<br>
+          Evlat edinme,<br>
 
-            kira bedeli tespiti ve tescil davaları gibi dava türleri bulunur.<br>
+          Mal rejimi,<br>
 
-            Kişiler arasındaki en sık yaşanan davalardır.<br>
+          Aile konutu,<br>
 
-            Kişiler arasındaki özel durumların en sık yaşandığı dava türlerinden olan taşınmazlara ait davalar,farklı
-            hukuk dalları tarafından da davaları görülen dava türleri arasındadır.Taşınmazlara ait davalarınızda
-            gayrimenkul hukuk bürosu ile çalışmak, davanın süresi ve seyri bakımından oldukça önemlidir.</p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('gayrimenkul_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Soybağı,<br>
+
+          Velayet,<br>
+
+          Çocuğun nafaka hakkı,<br>
+
+          Yasal danışmanlık,<br>
+
+          Kayyımlık gibi alt konuları incelenmektedir.<br>
+
+          Aile Hukuku Neden Olmalı?<br>
+
+          Türk Medeni Kanuna göre düzenlenmiş olan aile hukukuna ilişkin uyuşmazlıkları gidermek Aile Mahkemelerinin
+          görev alanına girmektedir.Aile bireylerinin birbirlerine olan tutumlarını belirlemede ve her bireyin kendi
+          sorumluluklarının bilincinde olması aile hukukuna ilişkin normlar ile sağlanmaktadır.<br>
+
+          Boşanma sebebi her ne olursa olsun bütün boşanma davaları Aile Mahkemelerinde açılması zorunludur.Ayrıca
+          Aile Mahkemlerinin olmadığı yerlerde Asliye Hukuk Mahkemeleri de Aile Mahkemesi sıfatı ile ayrılık ve
+          boşanma davalarına bakmakta görevlidirler.<br>
+
+          Biz Neler Yapıyoruz?<br>
+
+          Mutlu Hukuk Bürosu olarak müvekkillerimiz doğrultusunda<br>
+
+          Çekişmeli Boşanma Davaları,<br>
+
+          Anlaşmalı Boşanma Davaları,<br>
+
+          Anlaşmalı Boşanma Protokolü,<br>
+
+          Nafaka Ve Tazminat Talepleri,<br>
+
+          Evlilik İptali Davaları,<br>
+
+          Evlilik Sözleşmesi Ve Mal Rejimi,<br>
+
+          Velayetin Değiştirilmesi,<br>
+
+          Babalık Davası gibi aile hukukunu ele alan bütün konularda hizmet vermekteyiz.<br>
+
+          Aile Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Biga Özkanlı Hukuk Bürosu
+          ile iletişime geçebilirsiniz</p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('aile_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- Miras Hukuku -->
-    <div id="miras_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Miras Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>Özkanlı Hukuk Bürosu,miras hukukunun bütün aşamalarına ilişkin olarak müvekkillerine gerek danışmanlık
-            hizmeti gerekse dava takibi konusunda hizmet sağlamaktadır.Miras hukuku alanındaki hizmetlerimiz,miras
-            hukukundan doğan uyuşmazlıkların duruma en uygun hale getirilmesinin haricinde uyuşmazlık doğmadan önceki
-            önleyici hizmetleri de kapsamaktadır. <br><br>
+  <!-- Gayrimenkul Hukuku -->
+  <div id="gayrimenkul_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Gayrimenkul Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>Gayrimenkul hukuku geniş bir alana sahip olup gayrimenkul dava türleri olarak geçen taşınmazlara ait
+          davaların birçok alt alanı bulunmaktadır. Gayrimenkul davaları eşya hukukunun bir alt
+          dalıdır.Arsa,ev,apartman,daire gibi taşınmazlar ile ilgili davalara bakılmaktadır.Gayrimenkul hukuku genel
+          anlamda gayrimenkuller ile ilgili hukuka aykırı olan durumların düzeltilmesi amaçlanmaktadır. <br>
 
-            Özkanlı Hukuk Bürosu,miras hukuku alanında ortaya çıkan her türlü sorunu çözüme ulaştırmada çözüm odaklı ve
-            profesyonel avukatlık ve hukuki danışmanlık hizmeti vermektedir.Mutlu Hukuk Bürosu’nun miras hukuku uzmanı
-            avukatları başta Çanakkale Biga olmak üzere bütün illerde şirketlere ve bireylere miras hukuk ile ilgili
-            konularda hukuki danışmanlık hizmeti vermektedir. <br><br>
+          Mutlu Hukuk Bürosu olarak , büyük ölçekli gayrimenkul geliştirme projeleri olmak üzere planlaması, , satın
+          alınması veya kiralanması,projelerin imarı, idari yükümlülükleri dahil gayrimenkul üzerinde yaşanan ve her
+          türlü ayni ve şahsi uyuşmazlıklar konusunda hukuki hizmetleri sağlamaktadır.<br>
 
-            Özkanlı Hukuk Bürosu olarak miras hukuku alanında profesyonel avukatlık ve hukuki danışmanlık olarak
-            sunduğumuz hizmet konuları; <br>
-            Vasiyetname ve miras sözleşmelerinin hazırlanması, <br><br>
+          Gayrimenkul Davasında Avukat Tutmak Zorunlu mu?<br>
 
-            Mirastan feragat sözleşmelerinin hazırlanması <br>
-            Vasiyetnamenin iptali davası açılması <br>
-            Ölünceye kadar bakma sözleşmesinin hazırlanması <br><br>
+          Hukuka aykırı olan gayrimenkul üzerinde usulsüz olan sorunların çözülmesi taşınmazlara ait davalarda,diğer
+          davalarda olduğu gibi avukat tutma zorunluluğunuz yoktur.Dava sürecindeki taraflar kendileri davaları açarak
+          takip edebilmektedirler.Fakat gayrimenkul davaları birçok teknik boyutu olup çok uzun süren ve sık takip
+          edilmesi gereken davalardan biri olduğu için tarafların yapacakları en küçük bir usul hatası davanın
+          kaybedilmesine neden olabilir.Gayrimenkul davalarının önemi nedeniyle uzman avukat vasıtasıyla davanın takip
+          edilmesi tarafların yapacakları muhtemel hataları ortadan kaldıracaktır.<br>
 
-            Miras taksimi sözleşmelerinin hazırlanması, <br><br>
+          Ayrıca gayrimenkul avukatları,taşınmaz davalarınıza bakabildiğin gibi ileri ki dönemlerden sorun yaşamamanız
+          için danışmanlık hizmeti de vermektedir.Alım satımlarınızda,kira sözleşmelerinizde,gayrimenkul
+          değerlendirilmesi ile ilgili bilgiler için de birlikte çalışabiliriz.Taşınmazlara ait davalar uzun soluklu
+          bir dava türü olduğunda uzman avukatlar ile çalışmanız davalarınız için önemli bir etkendir.<br>
 
-            Mirasın reddi davaları açılması,<br>
-            Muris muvazaa davalarının açılması,<br>
-            Mirastan feragat ve çıkarılma davalarının açılması,<br>
-            Ölüme bağlı tasarrufların iptali davaları açılması,<br>
-            Tenkis davalarının açılması,<br>
-            Miras sebebiyle istihkak davaları açılması,<br>
-            Tereke davalarının açılması şeklinde sıralayabiliriz.</p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('miras_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Gayrimenkul Hukuku Hangi Konuları Kapsar?<br>
+
+          Gayrimenkul hukuku taşınmazlarınız ile ilgili olarak tarla, arsa, bina ve diğer taşınmazlar üzerine bakılan
+          davaları kapsamaktadır.Taşınmaz dava türleri;<br>
+
+          istihkak davaları,<br>
+
+          kamulaştırma davaları ,<br>
+
+          Tapu ve tescil davaları başta olmak üzere,<br>
+
+          kira bedeli tespiti ve tescil davaları gibi dava türleri bulunur.<br>
+
+          Kişiler arasındaki en sık yaşanan davalardır.<br>
+
+          Kişiler arasındaki özel durumların en sık yaşandığı dava türlerinden olan taşınmazlara ait davalar,farklı
+          hukuk dalları tarafından da davaları görülen dava türleri arasındadır.Taşınmazlara ait davalarınızda
+          gayrimenkul hukuk bürosu ile çalışmak, davanın süresi ve seyri bakımından oldukça önemlidir.</p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('gayrimenkul_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- Ceza Hukuku -->
-    <div id="ceza_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Ceza Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            Ceza hukukunun temel iki konusu ceza ve suçlardır.Bireysel çıkarları koruma gereği,toplumsal düzeni
-            sağlama,devlet tarafından belirlenen davranışları yapma ve bunlardan istenmeyenlerden kaçınma konusunda
-            bireylere emirler vermeye ve verilen emirlere uymayanlar için yaptırımlar öngörmeye yönelmiştir.Ceza hukuku
-            da belirlenen yasalar ile emirleri ve yaptırımları inceleyen hukuk alanıdır. <br>
+  <!-- Miras Hukuku -->
+  <div id="miras_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Miras Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>Özkanlı Hukuk Bürosu,miras hukukunun bütün aşamalarına ilişkin olarak müvekkillerine gerek danışmanlık
+          hizmeti gerekse dava takibi konusunda hizmet sağlamaktadır.Miras hukuku alanındaki hizmetlerimiz,miras
+          hukukundan doğan uyuşmazlıkların duruma en uygun hale getirilmesinin haricinde uyuşmazlık doğmadan önceki
+          önleyici hizmetleri de kapsamaktadır. <br><br>
 
-            Toplumun mutluluğunun gerçekleşmesi ve hukuki barışın korunmasına hizmet eden ceza hukuku,anayasal koruma
-            altına alınmış temel hak ve özgürlüklerin korunması ve bunların ihlal edilmesi durumunda devreye
-            girmektedir. <br>
+          Özkanlı Hukuk Bürosu,miras hukuku alanında ortaya çıkan her türlü sorunu çözüme ulaştırmada çözüm odaklı ve
+          profesyonel avukatlık ve hukuki danışmanlık hizmeti vermektedir.Mutlu Hukuk Bürosu’nun miras hukuku uzmanı
+          avukatları başta Çanakkale Biga olmak üzere bütün illerde şirketlere ve bireylere miras hukuk ile ilgili
+          konularda hukuki danışmanlık hizmeti vermektedir. <br><br>
 
-            Özkanlı Hukuk Bürosu olarak,ceza hukuku ve ceza muhakeme hukuku alanında hem uygulama hem de teorik
-            tecrübeleri le müvekkillerimizin ceza hukuku alanındaki karşılaşılan tüm ihtiyaçlarını karşılamaktayız.Aynı
-            zamanda müvekkillerimizin soruşturma öncesi danışmanlık hizmetinin yanında müvekkillerimizin tüm idari ve
-            adli süreçte temsil etmekteyiz. <br>
+          Özkanlı Hukuk Bürosu olarak miras hukuku alanında profesyonel avukatlık ve hukuki danışmanlık olarak
+          sunduğumuz hizmet konuları; <br>
+          Vasiyetname ve miras sözleşmelerinin hazırlanması, <br><br>
 
-            Ceza Hukuku Alanında Verdiğimiz Hizmetler<br>
+          Mirastan feragat sözleşmelerinin hazırlanması <br>
+          Vasiyetnamenin iptali davası açılması <br>
+          Ölünceye kadar bakma sözleşmesinin hazırlanması <br><br>
 
-            Özkanlı Hukuk Börosu olarak aşağıda yer alan hizmetleri ceza avukatlarımız tarafından müvekkillerimize <br>
+          Miras taksimi sözleşmelerinin hazırlanması, <br><br>
 
-            Hayata karşı suçlar: taksirle adam öldürme, Kasten adam öldürme, insan ticareti <br>
-
-            Cinsel dokunulmazlığa karşı suçlar : Cinsel taciz, cinsel saldırı, cinsel istismar <br>
-
-            Vücut dokunulmazlığına karşı suçlar : Kasten yaralama, taksirle yaralama <br>
-
-            Şerefe karşı suçlar : Hakaret <br>
-
-            Hürriyete karşı suçlar : Kişiyi hürriyetinden yoksun bırakma, tehdit, şantaj, konut dokunulmazlığının ihlali
-            <br>
-
-            Mal varlığına karşı suçlar : Yağma (gasp), hırsızlık, kullanma hırsızlığı, mala zarar verme, güveni kötüye
-            kullanma, dolandırıcılık <br>
-
-            Özel hayata karşı suçlar : Özel hayatın gizliliğini ihlal, haberleşmenin gizliliğini ihlal <br>
-
-            Genel ahlaka karşı suçlar :Fuhuş, müstehcenlik, kumar oynanması için yer ve imkan sağlama <br>
-
-            Kamu güvenine karşı suçlar : Parada sahtecilik, resmi belgede sahtecilik, mühürde sahtecilik, özel belgede
-            sahtecilik <br>
-            Ceza hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
-            ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('ceza_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Mirasın reddi davaları açılması,<br>
+          Muris muvazaa davalarının açılması,<br>
+          Mirastan feragat ve çıkarılma davalarının açılması,<br>
+          Ölüme bağlı tasarrufların iptali davaları açılması,<br>
+          Tenkis davalarının açılması,<br>
+          Miras sebebiyle istihkak davaları açılması,<br>
+          Tereke davalarının açılması şeklinde sıralayabiliriz.</p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('miras_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- Medeni Hukuku -->
-    <div id="medeni_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Medeni Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            Kişilerin birbiriyle olan ve ya belirli ölçülerde kişilerle devletin dolaylı ya da doğrudan özel
-            ilişkilerinin kamu hukuku dışında kalan hukuk dalına medeni hukuk adı verilmektedir.Medeni hukuk,özel hukuk
-            denilince akla gelmektedir.Temeli ise 1926 tarihli 818 sayılı Borçlar Kanunu ve 2002 tarihli 4721 sayılı
-            Medeni Hukuk’tur.Medeni Hukuk 5 dala ayrılmaktadır.Bunlar; <br> <br>
+  <!-- Ceza Hukuku -->
+  <div id="ceza_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Ceza Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          Ceza hukukunun temel iki konusu ceza ve suçlardır.Bireysel çıkarları koruma gereği,toplumsal düzeni
+          sağlama,devlet tarafından belirlenen davranışları yapma ve bunlardan istenmeyenlerden kaçınma konusunda
+          bireylere emirler vermeye ve verilen emirlere uymayanlar için yaptırımlar öngörmeye yönelmiştir.Ceza hukuku
+          da belirlenen yasalar ile emirleri ve yaptırımları inceleyen hukuk alanıdır. <br>
 
-            Aile Hukuku, <br> <br>
+          Toplumun mutluluğunun gerçekleşmesi ve hukuki barışın korunmasına hizmet eden ceza hukuku,anayasal koruma
+          altına alınmış temel hak ve özgürlüklerin korunması ve bunların ihlal edilmesi durumunda devreye
+          girmektedir. <br>
 
-            Eşya Hukuku, <br> <br>
+          Özkanlı Hukuk Bürosu olarak,ceza hukuku ve ceza muhakeme hukuku alanında hem uygulama hem de teorik
+          tecrübeleri le müvekkillerimizin ceza hukuku alanındaki karşılaşılan tüm ihtiyaçlarını karşılamaktayız.Aynı
+          zamanda müvekkillerimizin soruşturma öncesi danışmanlık hizmetinin yanında müvekkillerimizin tüm idari ve
+          adli süreçte temsil etmekteyiz. <br>
 
-            Miras Hukuku, <br> <br>
+          Ceza Hukuku Alanında Verdiğimiz Hizmetler<br>
 
-            Kişiler Hukuku, <br> <br>
+          Özkanlı Hukuk Börosu olarak aşağıda yer alan hizmetleri ceza avukatlarımız tarafından müvekkillerimize <br>
 
-            Borçlar Hukuku olmak üzere 5 dala ayrılmaktadır. <br> <br>
+          Hayata karşı suçlar: taksirle adam öldürme, Kasten adam öldürme, insan ticareti <br>
 
-            Türk hukukunda bulunan medeni kanunun ile borçlar kanunu birbirinden ayrılması temelinde medeni kanun
-            iktibas edilirken borçlar kanunu İsviçre’de henüz hazırlanmamış olmasıdır. <br> <br>
+          Cinsel dokunulmazlığa karşı suçlar : Cinsel taciz, cinsel saldırı, cinsel istismar <br>
 
-            Özel hukukun temeli sayılan ve düzenlediği ilişkiler bakımından en kapsamlı olan medeni hukuk özel hukuk
-            dalıdır.Ticari ilişkiler dışında kalan,kişiliğin elde edilmesinden sona ermesine kadar geçen süre içinde tüm
-            özel ilişkileri içine alır. <br><br>
+          Vücut dokunulmazlığına karşı suçlar : Kasten yaralama, taksirle yaralama <br>
 
-            Medeni hukukun temel ilkeleri şunlardır: <br><br>
+          Şerefe karşı suçlar : Hakaret <br>
 
-            İyi niyet, Hakkın Kötüye Kullanılmaması ve Dürüstlük Kuralı ilkeleri,<br>
-            Borçların genel kurallarının uygulanması, <br>
-            Hâkimin takdir yetkisi, <br>
-            İspat kuralları, <br>
-            Medeni hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
-            ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('medeni_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Hürriyete karşı suçlar : Kişiyi hürriyetinden yoksun bırakma, tehdit, şantaj, konut dokunulmazlığının ihlali
+          <br>
+
+          Mal varlığına karşı suçlar : Yağma (gasp), hırsızlık, kullanma hırsızlığı, mala zarar verme, güveni kötüye
+          kullanma, dolandırıcılık <br>
+
+          Özel hayata karşı suçlar : Özel hayatın gizliliğini ihlal, haberleşmenin gizliliğini ihlal <br>
+
+          Genel ahlaka karşı suçlar :Fuhuş, müstehcenlik, kumar oynanması için yer ve imkan sağlama <br>
+
+          Kamu güvenine karşı suçlar : Parada sahtecilik, resmi belgede sahtecilik, mühürde sahtecilik, özel belgede
+          sahtecilik <br>
+          Ceza hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
+          ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('ceza_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- İcra ve İflas Hukuku -->
-    <div id="icra_ve_iflas_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İcra ve İflas Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            Özkanlı Hukuk Bürosu olarak icra ve iflas hukuku alanında uzman ekibimiz,alacakları tahsil etme konusunda
-            hukuki yardım alma ihtiyacı duyan şirketlerin,bankaların veya bireylerin uluslararası kanunlarla korunan
-            alacakları da dahil olmak üzere alacakların icra takibi ile tahsili ve icra takiplerinden doğan her türlü
-            dava işlemlerini gerçekleştirme amacıyla faaliyet göstermekteyiz.Bu işlemlerin yanında iflas,iflasın
-            ertelenmesi,icra hukukundan kaynaklanan hukuki işlemlerin takibini de uzman avukatlarımız tarafından hizmet
-            vermekteyiz. <br> <br>
+  <!-- Medeni Hukuku -->
+  <div id="medeni_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Medeni Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          Kişilerin birbiriyle olan ve ya belirli ölçülerde kişilerle devletin dolaylı ya da doğrudan özel
+          ilişkilerinin kamu hukuku dışında kalan hukuk dalına medeni hukuk adı verilmektedir.Medeni hukuk,özel hukuk
+          denilince akla gelmektedir.Temeli ise 1926 tarihli 818 sayılı Borçlar Kanunu ve 2002 tarihli 4721 sayılı
+          Medeni Hukuk’tur.Medeni Hukuk 5 dala ayrılmaktadır.Bunlar; <br> <br>
 
-            Şirketlerin,bankaların ve bireylerin alacakları olan fatura,cari hesap,bono,çek,kredi,ipotek,kredi kartı
-            gibi farklı hukuki nedenlerden kaynaklanan alacaklarının,icra ve iflas hukuku gereği,yasal takibini yapmak
-            ve hukuksal işlemleri,özellikle haciz baskısını kullanarak yerine getirmek suretiyle,alacakların tahsilatını
-            yaparak derhal alacaklı kişilerin hesaplarına geçmesini sağlamak icra ve iflas hukuku avukatlarımızın
-            çalışma esaslarını oluşturan unsurlardandır. <br> <br>
+          Aile Hukuku, <br> <br>
 
-            Mutlu Hukuk Bürosu icra ve iflas hukuku alanında uzman avukatlarımız tarafından, <br> <br>
+          Eşya Hukuku, <br> <br>
 
-            İpotek, rehin işlemleri, konması ve kaldırılması <br>
-            Kambiyo Senetlerine Özgü İcra Takip İşlemler <br>
-            Kira Alacağına İlişkin Takip Ve Tahliye İşlemleri <br>
-            İlamlı, İlamsız Takip İşlemleri <br>
-            İflas Yolu İle Takip İşlemleri, İflas Davası ve İflasın Ertelenmesi İşlemleri <br>
-            İcra takibine itiraz, icra takibinin iptali ve taliki işlemleri <br>
-            İcra Mahkemelerinde Görülen İşler Ve Davalar <br>
-            İtirazın kaldırılması, itirazın iptali, menfi tespit <br>
-            İcra ve İflas Kanunu’ndan doğan tüm işlemler ve davalar görülmektedir. <br> <br>
+          Miras Hukuku, <br> <br>
 
-            İcra ve İflas Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk
-            Bürosu ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('icra_ve_iflas_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Kişiler Hukuku, <br> <br>
+
+          Borçlar Hukuku olmak üzere 5 dala ayrılmaktadır. <br> <br>
+
+          Türk hukukunda bulunan medeni kanunun ile borçlar kanunu birbirinden ayrılması temelinde medeni kanun
+          iktibas edilirken borçlar kanunu İsviçre’de henüz hazırlanmamış olmasıdır. <br> <br>
+
+          Özel hukukun temeli sayılan ve düzenlediği ilişkiler bakımından en kapsamlı olan medeni hukuk özel hukuk
+          dalıdır.Ticari ilişkiler dışında kalan,kişiliğin elde edilmesinden sona ermesine kadar geçen süre içinde tüm
+          özel ilişkileri içine alır. <br><br>
+
+          Medeni hukukun temel ilkeleri şunlardır: <br><br>
+
+          İyi niyet, Hakkın Kötüye Kullanılmaması ve Dürüstlük Kuralı ilkeleri,<br>
+          Borçların genel kurallarının uygulanması, <br>
+          Hâkimin takdir yetkisi, <br>
+          İspat kuralları, <br>
+          Medeni hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
+          ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('medeni_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- İdare ve Vergi Hukuku -->
-    <div id="idare_ve_vergi_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İdare ve Vergi Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            İdare ve Vergi Hukuku idare ile bireyler arasındaki hukuki ilişkileri düzenleyen hukuk alanına verilen
-            addır.İdarenin tüm işlem ve eylemlerinin hukuki denetime tabi tutulması ve hukuka uygun olması “hukuk
-            devleti” olabilmenin başlıca unsurudur.İdare,hukuk devletinin gereği olarak,tesis ettiği idari işlemlerde ve
-            tüm eylemlerinde kanuna bağlı kalmak ve hukukun genel ilkelerine uygun hareket etmekle yükümlüdür.Uygulamada
-            vatandaşın mağduriyetine neden olan hukuka aykırı idari işlem ve eylemlere sıklıkla rastlanabilmektedir.
-            <br> <br>
+  <!-- İcra ve İflas Hukuku -->
+  <div id="icra_ve_iflas_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İcra ve İflas Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          Özkanlı Hukuk Bürosu olarak icra ve iflas hukuku alanında uzman ekibimiz,alacakları tahsil etme konusunda
+          hukuki yardım alma ihtiyacı duyan şirketlerin,bankaların veya bireylerin uluslararası kanunlarla korunan
+          alacakları da dahil olmak üzere alacakların icra takibi ile tahsili ve icra takiplerinden doğan her türlü
+          dava işlemlerini gerçekleştirme amacıyla faaliyet göstermekteyiz.Bu işlemlerin yanında iflas,iflasın
+          ertelenmesi,icra hukukundan kaynaklanan hukuki işlemlerin takibini de uzman avukatlarımız tarafından hizmet
+          vermekteyiz. <br> <br>
 
-            Özkanlı Hukuk Bürosu, idare ve vergi hukuku kapsamına giren her türlü konuda avukatlık ve hukuki danışmanlık
-            hizmeti vermektedir.İdare ve Vergi Hukuku kapsamına giren kurum ve özel kişilerin devlet ve devlet ile bağlı
-            idari kurumlar ile olan ilişkileri imar,vergiler,idari ceza,düzenlenmiş piyasalarda ruhsatlandırma ve
-            lisanslandırma işlemleri gibi pek çok uyuşmazlığa ilişkin konular idari hukuk kapsamında sonuca ilişkin
-            çözümler üretmekteyiz. <br><br>
+          Şirketlerin,bankaların ve bireylerin alacakları olan fatura,cari hesap,bono,çek,kredi,ipotek,kredi kartı
+          gibi farklı hukuki nedenlerden kaynaklanan alacaklarının,icra ve iflas hukuku gereği,yasal takibini yapmak
+          ve hukuksal işlemleri,özellikle haciz baskısını kullanarak yerine getirmek suretiyle,alacakların tahsilatını
+          yaparak derhal alacaklı kişilerin hesaplarına geçmesini sağlamak icra ve iflas hukuku avukatlarımızın
+          çalışma esaslarını oluşturan unsurlardandır. <br> <br>
 
-            Mutlu Hukuk Bürosu olarak İdari ve Vergi Hukukuna ilişkin hizmetlerimiz; <br><br>
+          Mutlu Hukuk Bürosu icra ve iflas hukuku alanında uzman avukatlarımız tarafından, <br> <br>
 
-            Kamu ihale işlemleri <br><br>
+          İpotek, rehin işlemleri, konması ve kaldırılması <br>
+          Kambiyo Senetlerine Özgü İcra Takip İşlemler <br>
+          Kira Alacağına İlişkin Takip Ve Tahliye İşlemleri <br>
+          İlamlı, İlamsız Takip İşlemleri <br>
+          İflas Yolu İle Takip İşlemleri, İflas Davası ve İflasın Ertelenmesi İşlemleri <br>
+          İcra takibine itiraz, icra takibinin iptali ve taliki işlemleri <br>
+          İcra Mahkemelerinde Görülen İşler Ve Davalar <br>
+          İtirazın kaldırılması, itirazın iptali, menfi tespit <br>
+          İcra ve İflas Kanunu’ndan doğan tüm işlemler ve davalar görülmektedir. <br> <br>
 
-            Rekabet, gümrük, vergi konularında idari yaptırımlara karşı yerel ve bölgesel idare ve vergi mahkemelerinde
-            <br><br>
-            dava açılması
-
-            Danıştay nezdinde açılacak tam yargı ve idari işlemin iptali davalarının takibi <br><br>
-
-            Belediyelerin imar ve iskan işlemlerine karşı yapılacak olan itirazlar ve ilgili hukuki prosedürün <br><br>
-            işletilmesi
-
-            İdari otoritelerce verilen ceza ve kararlara karşı yapılacak üst merci itirazları ve ilgili uyuşmazlıkların
-            çözümü <br><br>
-
-            Vergi konularında vergi mahkemelerinde dava açılması<br><br>
-
-            Gelir vergisi stopajı, Kaynak kullanım destekleme fonu <br><br>
-
-            Kurumlar vergisi, Gelir vergisi, Katma değer vergisi <br><br>
-
-            Yanlış veya eksik gelir beyanları <br><br>
-
-            Motorlu taşıtlar vergisi <br><br>
-
-            İdare tarafından yapılan tarh işlemleri <br><br>
-
-            Diğer her türlü vergi uyuşmazlığı konuları <br><br>
-
-            İdare ve Vergi Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk
-            Bürosu ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('idare_ve_vergi_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          İcra ve İflas Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk
+          Bürosu ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('icra_ve_iflas_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- İş ve Sosyal Güvenlik Hukuku -->
-    <div id="iş_ve_sosyal_güvenlik_hukuku" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İş ve Sosyal Güvenlik Hukuku</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            Devlet,işçi ve işveren arasındaki ilişkileri inceleyen ve düzenleyen hukuk dalına iş hukuku olarak
-            tanımlanmaktadır. <br><br>
+  <!-- İdare ve Vergi Hukuku -->
+  <div id="idare_ve_vergi_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İdare ve Vergi Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          İdare ve Vergi Hukuku idare ile bireyler arasındaki hukuki ilişkileri düzenleyen hukuk alanına verilen
+          addır.İdarenin tüm işlem ve eylemlerinin hukuki denetime tabi tutulması ve hukuka uygun olması “hukuk
+          devleti” olabilmenin başlıca unsurudur.İdare,hukuk devletinin gereği olarak,tesis ettiği idari işlemlerde ve
+          tüm eylemlerinde kanuna bağlı kalmak ve hukukun genel ilkelerine uygun hareket etmekle yükümlüdür.Uygulamada
+          vatandaşın mağduriyetine neden olan hukuka aykırı idari işlem ve eylemlere sıklıkla rastlanabilmektedir.
+          <br> <br>
 
-            Tarihsel süreç içerisinde devlet,ekonomik ve kişisel bakımdan güçsüz ve bağımlı konumda bulunan işçileri
-            korumak amacıyla işçi lehine asgari normları öngören emredici düzenlemeleri gerçekleştirmiş ve işbu
-            düzenlemeler iş hukukunun bir unsuru haline gelmiştir. <br><br>
+          Özkanlı Hukuk Bürosu, idare ve vergi hukuku kapsamına giren her türlü konuda avukatlık ve hukuki danışmanlık
+          hizmeti vermektedir.İdare ve Vergi Hukuku kapsamına giren kurum ve özel kişilerin devlet ve devlet ile bağlı
+          idari kurumlar ile olan ilişkileri imar,vergiler,idari ceza,düzenlenmiş piyasalarda ruhsatlandırma ve
+          lisanslandırma işlemleri gibi pek çok uyuşmazlığa ilişkin konular idari hukuk kapsamında sonuca ilişkin
+          çözümler üretmekteyiz. <br><br>
 
-            İş hukuku sanayi devrimi ile birlikte ortaya çıkmış olan bir hukuk dalı olup 18'inci yüzyılın ikinci
-            yarısından sonra teknik alanlarda ortaya çıkan gelişmeler ve buluşlar ilk başta İngiltere ve daha sonrasında
-            diğer Batı Avrupa ülkelerinde sanayileşme olgusunun ortaya çıkmasına ve seri fabrika üretiminin oluşmasına
-            sebebiyet vermiştir.Sanayileşme ile birlikte ihtiyaç duyulan iş gücünün artması sebebiyle işçi sınıfı
-            oluşmuştur.Devletler tarafından herhangi bir müdahale olmaması nedeniyle işverenler tarafından tek taraflı
-            olarak çalışma koşulları belirlenmiştir.İşveren tarafından belirlenen bu koşullar nedeniyle ağır çalışma
-            şartları,mesai saatlerinin uzunluğu,düşük ücretler gibi sorunlar ortaya çıkmıştır.Oluşan bu sorunlara çözüm
-            arayan hem İngiltere'de hemde batı ülkelerindeki devletler olumsuz koşulları düzeltmek için işçi lehine
-            uygulanacak birtakım yasaları yürürlüğe koymuştur.Koyulan bu yasalar neticesinde çağdaş anlamda bir iş
-            hukuku ve iş mevzuatı doğmuştur. <br><br>
+          Mutlu Hukuk Bürosu olarak İdari ve Vergi Hukukuna ilişkin hizmetlerimiz; <br><br>
 
-            Sosyal güvenlik hukuku,toplumun gelirlerinin azalmasını,giderlerin artmasını engelleme amacı
-            taşıyan,toplumdaki bireylerin sosyal refahını sağlayan,bireyler yönünden oluşabilecek riskleri önleyen özel
-            hukuk kurallarını aşan bir takım kurallardan oluşan hukuk dalı olarak tanımlanmaktadır. <br><br>
+          Kamu ihale işlemleri <br><br>
 
-            Özkanlı Hukuk Bürosu,iş ve sosyal güvenlik hukuku hakkında işçi ve işverenlere her konuda avukatlık ve
-            hukuki
-            danışmanlık hizmeti vermektedir.<br><br>
+          Rekabet, gümrük, vergi konularında idari yaptırımlara karşı yerel ve bölgesel idare ve vergi mahkemelerinde
+          <br><br>
+          dava açılması
 
-            İşçi ve İşverenler için avukatlık ve danışmanlık hizmeti verdiğimiz başlıca davalar;<br><br>
+          Danıştay nezdinde açılacak tam yargı ve idari işlemin iptali davalarının takibi <br><br>
 
-            Bir kısım iş davaları öncesinde dava şartı olan arabuluculuk sürecinin yönetilmesi,<br>
-            Otuz veya daha fazla kişiden fazla işçi çalışan işyerleri hakkında açılan işe iade davaları<br>
-            İş kazası veya meslek hastalığının, maluliyet oranlarının tespiti davaları ve bu davalar uyarınca açılan
-            destekten yoksun kalma, maddi ve manevi tazminat davaları <br>
-            Kıdem ve ihbar tazminatı, yıllık izin, fazla mesai, genel tatil günü çalışması, asgari geçim indirimi, dini
-            ve resmi tatil günlerinde yapılan çalışmalardan doğan alacaklar gibi tüm işçilik alacakları için açılan
-            davalar <br>
-            Asıl işveren ve alt (taşeron) işverene açılan sorumluluk davaları <br>
-            İşçinin hatalı iş görmesinden doğan zararların giderilmesi için açılan tazminat davaları ve işçiye zararın
-            rücu davaları <br>
-            Mobbing (psikolojik baskı) sebebiyle açılan iş sözleşmesinin feshi davaları <br>
-            İş ve Sosyal Güvelik Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı
-            Mutlu
-            Hukuk Bürosu ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('iş_ve_sosyal_güvenlik_hukuku').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Belediyelerin imar ve iskan işlemlerine karşı yapılacak olan itirazlar ve ilgili hukuki prosedürün <br><br>
+          işletilmesi
+
+          İdari otoritelerce verilen ceza ve kararlara karşı yapılacak üst merci itirazları ve ilgili uyuşmazlıkların
+          çözümü <br><br>
+
+          Vergi konularında vergi mahkemelerinde dava açılması<br><br>
+
+          Gelir vergisi stopajı, Kaynak kullanım destekleme fonu <br><br>
+
+          Kurumlar vergisi, Gelir vergisi, Katma değer vergisi <br><br>
+
+          Yanlış veya eksik gelir beyanları <br><br>
+
+          Motorlu taşıtlar vergisi <br><br>
+
+          İdare tarafından yapılan tarh işlemleri <br><br>
+
+          Diğer her türlü vergi uyuşmazlığı konuları <br><br>
+
+          İdare ve Vergi Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk
+          Bürosu ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('idare_ve_vergi_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
+  </div>
 
-    <!-- Arabuluculuk -->
-    <div id="arabuluculuk" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container w3-teal w3-center w3-padding-32">
-          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Arabuluculuk</h2>
-        </header>
-        <div class="w3-container">
-          <p>
-            Alternatif bir uyuşmazlık çözüm yöntemi olan arabuluculuk Avrupa’da ve Amerika’da 40 yılı aşkın bir süredir
-            uygulanmaktadır. Arabuluculuk, taraflar arasında davaya konu olmuş veya olabilecek bir uyuşmazlığı bir
-            arabulucu eşliğinde karşılıklı olarak müzakere ederek çözüme kavuşturulan bir süreçtir.Uyuşmazlığın mahkeme
-            dışı,kesin ve hızlı bir şekilde çözülmesini amaçlayan bir usul hukuku kurumudur. <br> <br>
+  <!-- İş ve Sosyal Güvenlik Hukuku -->
+  <div id="iş_ve_sosyal_güvenlik_hukuku" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>İş ve Sosyal Güvenlik Hukuku</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          Devlet,işçi ve işveren arasındaki ilişkileri inceleyen ve düzenleyen hukuk dalına iş hukuku olarak
+          tanımlanmaktadır. <br><br>
 
-            “Zorunlu arabuluculuk” ve “İhtiyari arabuluculuk” olarak iki ayrılmaktadır. <br> <br>
+          Tarihsel süreç içerisinde devlet,ekonomik ve kişisel bakımdan güçsüz ve bağımlı konumda bulunan işçileri
+          korumak amacıyla işçi lehine asgari normları öngören emredici düzenlemeleri gerçekleştirmiş ve işbu
+          düzenlemeler iş hukukunun bir unsuru haline gelmiştir. <br><br>
 
-            Zorunlu Arabuluculuk: Dava açmadan önce bazı uyuşmazlıklar için arabulucuya başvuru zorunluluğu
-            bulunmaktadır.Zorunlu arabulucuğa tabi uyuşmazlıklarda arabuluculuk süreci yargılamanın dava şartı olup aksi
-            yönde hareket eden ilgililerin davası dava şartı yokluğu nedeniyle reddedilecektir.Zorunlu arabuluculuk
-            kapsamına iş davalarına konu alan bazı talepler (ihbar tazminatı,kıdem tazminatı,fazla mesai ücreti,maaşlar
-            vb) ile bir kısım ticari uyuşmazlıklar girmektedir. <br> <br>
+          İş hukuku sanayi devrimi ile birlikte ortaya çıkmış olan bir hukuk dalı olup 18'inci yüzyılın ikinci
+          yarısından sonra teknik alanlarda ortaya çıkan gelişmeler ve buluşlar ilk başta İngiltere ve daha sonrasında
+          diğer Batı Avrupa ülkelerinde sanayileşme olgusunun ortaya çıkmasına ve seri fabrika üretiminin oluşmasına
+          sebebiyet vermiştir.Sanayileşme ile birlikte ihtiyaç duyulan iş gücünün artması sebebiyle işçi sınıfı
+          oluşmuştur.Devletler tarafından herhangi bir müdahale olmaması nedeniyle işverenler tarafından tek taraflı
+          olarak çalışma koşulları belirlenmiştir.İşveren tarafından belirlenen bu koşullar nedeniyle ağır çalışma
+          şartları,mesai saatlerinin uzunluğu,düşük ücretler gibi sorunlar ortaya çıkmıştır.Oluşan bu sorunlara çözüm
+          arayan hem İngiltere'de hemde batı ülkelerindeki devletler olumsuz koşulları düzeltmek için işçi lehine
+          uygulanacak birtakım yasaları yürürlüğe koymuştur.Koyulan bu yasalar neticesinde çağdaş anlamda bir iş
+          hukuku ve iş mevzuatı doğmuştur. <br><br>
 
-            İhtiyari Arabuluculuk:Tarafların bir arabuluculuğa gitme zorunluluğu olmadığı halde uyuşmazlığın hızlı ve
-            etkin çözümü için dava açmadan önce arabuluculuğu tercih etmesidir.Üzerinde serbestçe tasarruf
-            edebilecekleri her türlü özel hukuk uyuşmazlığında taraflar ilgili ihtiyari arabuluculuk yoluna
-            başvurubilirler. <br> <br>
+          Sosyal güvenlik hukuku,toplumun gelirlerinin azalmasını,giderlerin artmasını engelleme amacı
+          taşıyan,toplumdaki bireylerin sosyal refahını sağlayan,bireyler yönünden oluşabilecek riskleri önleyen özel
+          hukuk kurallarını aşan bir takım kurallardan oluşan hukuk dalı olarak tanımlanmaktadır. <br><br>
 
-            Arabuluculuk;ilişkileri korur,düşük maliyetlidir,hızlı çözüm sağlar,taraf iradeleri üstün ve gizli
-            yürütülür. <br> <br>
+          Özkanlı Hukuk Bürosu,iş ve sosyal güvenlik hukuku hakkında işçi ve işverenlere her konuda avukatlık ve
+          hukuki
+          danışmanlık hizmeti vermektedir.<br><br>
 
-            Mutlu Hukuk Bürosu, alternatif çözüm yollarının daha fazla yer alması gerektiğini düşünerek arabuluculuk
-            konusunda uzman avukatlar ile hukuki hizmet vermektedir. <br><br>
+          İşçi ve İşverenler için avukatlık ve danışmanlık hizmeti verdiğimiz başlıca davalar;<br><br>
 
-            Mutlu Hukuk Bürosu olarak arabuluculuk alanında verdiğimiz hizmetler; <br> <br>
-
-            Alım satım sözleşmeleri <br>
-            Kredi sözleşmeleri <br>
-            Eser sözleşmeleri <br>
-            Tüketici uyuşmazlıkları <br>
-            İşçi alacakları <br>
-            Kira uyuşmazlıkları <br>
-            Marka-patent uyuşmazlıkları <br>
-            Deniz ticareti ve sigorta uyuşmazlıkları <br>
-            TCK kapsamında şikâyete bağlı suçların işlenmesi nedeniyle istenecek tazminatlar <br>
-            Boşanmadan sonraki mal paylaşım uyuşmazlıkları <br>
-            Arabuluculuk ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
-            ile iletişime geçebilirsiniz.
-          </p>
-          <button class="w3-button w3-red w3-section"
-            onclick="document.getElementById('arabuluculuk').style.display='none'">Çıkış <i
-              class="fa fa-remove"></i></button>
-          <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
-        </div>
+          Bir kısım iş davaları öncesinde dava şartı olan arabuluculuk sürecinin yönetilmesi,<br>
+          Otuz veya daha fazla kişiden fazla işçi çalışan işyerleri hakkında açılan işe iade davaları<br>
+          İş kazası veya meslek hastalığının, maluliyet oranlarının tespiti davaları ve bu davalar uyarınca açılan
+          destekten yoksun kalma, maddi ve manevi tazminat davaları <br>
+          Kıdem ve ihbar tazminatı, yıllık izin, fazla mesai, genel tatil günü çalışması, asgari geçim indirimi, dini
+          ve resmi tatil günlerinde yapılan çalışmalardan doğan alacaklar gibi tüm işçilik alacakları için açılan
+          davalar <br>
+          Asıl işveren ve alt (taşeron) işverene açılan sorumluluk davaları <br>
+          İşçinin hatalı iş görmesinden doğan zararların giderilmesi için açılan tazminat davaları ve işçiye zararın
+          rücu davaları <br>
+          Mobbing (psikolojik baskı) sebebiyle açılan iş sözleşmesinin feshi davaları <br>
+          İş ve Sosyal Güvelik Hukuku ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı
+          Mutlu
+          Hukuk Bürosu ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('iş_ve_sosyal_güvenlik_hukuku').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
       </div>
     </div>
-    <!-- İletişim -->
-    <div class="w3-container w3-padding-64" id="iletisim" style="background-color: rgb(239, 239, 239)">
-      <h2 class="w3-wide w3-center">İLETİŞİM</h2>
-      <p class="w3-opacity w3-center"><i>Her Zaman Bir Dava Uzağınızda</i></p>
-      <p style="text-align: center; font-size: 125%;">
-        <i class="fa fa-map-marker" style="width:30px"></i> Hamdibey Mahalesi Tekçe Sokak No: 2 Biga /
-        Çanakkale<br>
-        <i class="fa fa-phone" style="width:30px"></i> 05424271779<br>
-        <i class="fa fa-phone" style="width:30px"></i> 05424271977<br>
-        <i class="fa fa-envelope" style="width:30px"> </i>ozkanlihukukburosu@gmail.com<br>
-      </p>
+  </div>
 
+  <!-- Arabuluculuk -->
+  <div id="arabuluculuk" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Arabuluculuk</h2>
+      </header>
+      <div class="w3-container">
+        <p>
+          Alternatif bir uyuşmazlık çözüm yöntemi olan arabuluculuk Avrupa’da ve Amerika’da 40 yılı aşkın bir süredir
+          uygulanmaktadır. Arabuluculuk, taraflar arasında davaya konu olmuş veya olabilecek bir uyuşmazlığı bir
+          arabulucu eşliğinde karşılıklı olarak müzakere ederek çözüme kavuşturulan bir süreçtir.Uyuşmazlığın mahkeme
+          dışı,kesin ve hızlı bir şekilde çözülmesini amaçlayan bir usul hukuku kurumudur. <br> <br>
+
+          “Zorunlu arabuluculuk” ve “İhtiyari arabuluculuk” olarak iki ayrılmaktadır. <br> <br>
+
+          Zorunlu Arabuluculuk: Dava açmadan önce bazı uyuşmazlıklar için arabulucuya başvuru zorunluluğu
+          bulunmaktadır.Zorunlu arabulucuğa tabi uyuşmazlıklarda arabuluculuk süreci yargılamanın dava şartı olup aksi
+          yönde hareket eden ilgililerin davası dava şartı yokluğu nedeniyle reddedilecektir.Zorunlu arabuluculuk
+          kapsamına iş davalarına konu alan bazı talepler (ihbar tazminatı,kıdem tazminatı,fazla mesai ücreti,maaşlar
+          vb) ile bir kısım ticari uyuşmazlıklar girmektedir. <br> <br>
+
+          İhtiyari Arabuluculuk:Tarafların bir arabuluculuğa gitme zorunluluğu olmadığı halde uyuşmazlığın hızlı ve
+          etkin çözümü için dava açmadan önce arabuluculuğu tercih etmesidir.Üzerinde serbestçe tasarruf
+          edebilecekleri her türlü özel hukuk uyuşmazlığında taraflar ilgili ihtiyari arabuluculuk yoluna
+          başvurubilirler. <br> <br>
+
+          Arabuluculuk;ilişkileri korur,düşük maliyetlidir,hızlı çözüm sağlar,taraf iradeleri üstün ve gizli
+          yürütülür. <br> <br>
+
+          Mutlu Hukuk Bürosu, alternatif çözüm yollarının daha fazla yer alması gerektiğini düşünerek arabuluculuk
+          konusunda uzman avukatlar ile hukuki hizmet vermektedir. <br><br>
+
+          Mutlu Hukuk Bürosu olarak arabuluculuk alanında verdiğimiz hizmetler; <br> <br>
+
+          Alım satım sözleşmeleri <br>
+          Kredi sözleşmeleri <br>
+          Eser sözleşmeleri <br>
+          Tüketici uyuşmazlıkları <br>
+          İşçi alacakları <br>
+          Kira uyuşmazlıkları <br>
+          Marka-patent uyuşmazlıkları <br>
+          Deniz ticareti ve sigorta uyuşmazlıkları <br>
+          TCK kapsamında şikâyete bağlı suçların işlenmesi nedeniyle istenecek tazminatlar <br>
+          Boşanmadan sonraki mal paylaşım uyuşmazlıkları <br>
+          Arabuluculuk ile ilgili avukatlık ve hukuki danışmanlık ihtiyacınız olması halinde Özkanlı Hukuk Bürosu
+          ile iletişime geçebilirsiniz.
+        </p>
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('arabuluculuk').style.display='none'">Çıkış <i
+            class="fa fa-remove"></i></button>
+        <p class="w3-right"> <a href="#iletisim" class="w3-text-blue">Bizimle İletişime Geçin</a></p>
+      </div>
     </div>
+  </div>
+  <!-- İletişim -->
+  <div class="w3-container w3-padding-64" id="iletisim" style="background-color: rgb(239, 239, 239)">
+    <h2 class="w3-wide w3-center">İLETİŞİM</h2>
+    <p class="w3-opacity w3-center"><i>Her Zaman Bir Dava Uzağınızda</i></p>
+    <p style="text-align: center; font-size: 125%;">
+      <i class="fa fa-map-marker" style="width:30px"></i> Hamdibey Mahalesi Tekçe Sokak No: 2 Biga /
+      Çanakkale<br>
+      <i class="fa fa-phone" style="width:30px"></i> 05424271779<br>
+      <i class="fa fa-phone" style="width:30px"></i> 05424271977<br>
+      <i class="fa fa-envelope" style="width:30px"> </i>ozkanlihukukburosu@gmail.com<br>
+    </p>
 
-    <!--Google Harita-->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.122814508301!2d27.237771475817546!3d40.228571471470495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b6b3938febc671%3A0x50e72adf795c9934!2sHamdibey%2C%20Tek%C3%A7e%20Sk.%20No%3A2%2C%2017200%20Biga%2F%C3%87anakkale!5e0!3m2!1str!2str!4v1734130934145!5m2!1str!2str"
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- End Page Content -->
+  </div>
+
+  <!--Google Harita-->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.122814508301!2d27.237771475817546!3d40.228571471470495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b6b3938febc671%3A0x50e72adf795c9934!2sHamdibey%2C%20Tek%C3%A7e%20Sk.%20No%3A2%2C%2017200%20Biga%2F%C3%87anakkale!5e0!3m2!1str!2str!4v1734130934145!5m2!1str!2str"
+    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- End Page Content -->
   </div>
 
 
@@ -877,8 +858,7 @@
       }
     }
 
-    function myFunction() 
-    {
+    function myFunction() {
       var x = document.getElementsByClassName("w3-bar")[0];
       if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
