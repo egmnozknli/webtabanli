@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hayirButton = document.querySelector(".btn2");
-    const hayirWrapper = document.querySelector(".hayir-wrapper");
     const evetButton = document.querySelector(".btn1");
 
     hayirButton.addEventListener("mouseenter", function () {
-        const containerRect = hayirWrapper.getBoundingClientRect();
-        const maxX = containerRect.width - hayirButton.offsetWidth - 10;
-        const maxY = containerRect.height - hayirButton.offsetHeight - 10;
+        const maxX = window.innerWidth - hayirButton.offsetWidth - 50;
+        const maxY = window.innerHeight - hayirButton.offsetHeight - 50;
         let newX, newY;
 
         do {
@@ -15,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } while (isOverlapping(newX, newY, hayirButton, evetButton));
 
         hayirButton.style.position = "absolute";
-        hayirButton.style.left = `${Math.max(0, Math.min(newX, maxX))}px`;
-        hayirButton.style.top = `${Math.max(0, Math.min(newY, maxY))}px`;
+        hayirButton.style.left = `${newX}px`;
+        hayirButton.style.top = `${newY}px`;
     });
 
     function isOverlapping(x, y, movingButton, staticButton) {
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
-    // Evet butonuna tıklanınca index2.html sayfasına yönlendirme
+    // Evet butonuna tıklanınca yeni sayfaya yönlendirme
     evetButton.addEventListener("click", function () {
         window.location.href = "index2.html";
     });

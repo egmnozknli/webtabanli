@@ -1,4 +1,4 @@
-/* Sayfanın sabit boyutta kalmasını sağlar */
+/* Sayfanın tam ekran olmasını ve taşmaları engeller */
 html, body {
     width: 100vw;  
     height: 100vh; 
@@ -23,23 +23,11 @@ h1 {
 
 /* Butonları içeren alan */
 .button-container {
-    position: relative;
-    width: 90vw;  /* Ekranın %90'ını kullanır */
-    height: 50vh; /* Yüksekliği ayarlanabilir */
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-/* Hayır butonu için sınırlandırılmış alan */
-.hayir-wrapper {
-    position: relative;
-    width: 100%; /* Konteynerin tamamını kaplar */
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 20px; /* Butonlar arasında boşluk bırakır */
+    width: auto;
 }
 
 /* Butonları düzenleme */
@@ -51,7 +39,6 @@ h1 {
     text-transform: uppercase;
     padding: 12px 20px;
     min-width: 200px;
-    margin: 10px;
     cursor: pointer;
     position: relative;
     transition: color 0.4s linear, transform 0.2s ease-in-out;
