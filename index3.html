@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,14 +33,6 @@
             background-color: pink;
             border-radius: 50%;
         }
-        .petal:nth-child(1) { transform: rotate(0deg) translateY(-10px); }
-        .petal:nth-child(2) { transform: rotate(45deg) translateY(-10px); }
-        .petal:nth-child(3) { transform: rotate(90deg) translateY(-10px); }
-        .petal:nth-child(4) { transform: rotate(135deg) translateY(-10px); }
-        .petal:nth-child(5) { transform: rotate(180deg) translateY(-10px); }
-        .petal:nth-child(6) { transform: rotate(225deg) translateY(-10px); }
-        .petal:nth-child(7) { transform: rotate(270deg) translateY(-10px); }
-        .petal:nth-child(8) { transform: rotate(315deg) translateY(-10px); }
         .center {
             position: absolute;
             width: 15px;
@@ -58,40 +50,21 @@
                 opacity: 0;
             }
         }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.5); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        .message {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em;
-            font-weight: bold;
-            color: white;
-            text-shadow: 4px 4px 8px black;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            opacity: 0;
-            width: 90%;
-            max-width: 600px;
-        }
     </style>
 </head>
 <body>
-    <div class="message" id="message">Agalarla tatile gidebilir miyiz?</div>
     <script>
-        function createFlower() {
+        function createFlower(x, y) {
             let flower = document.createElement('div');
             flower.classList.add('flower');
             document.body.appendChild(flower);
             
-            let startPosX = Math.random() * window.innerWidth;
+            let startPosX = x || Math.random() * window.innerWidth;
             let duration = Math.random() * 5 + 3;
             let size = Math.random() * 30 + 20;
             
             flower.style.left = `${startPosX}px`;
+            flower.style.top = `${y || -50}px`;
             flower.style.width = `${size}px`;
             flower.style.height = `${size}px`;
             flower.style.animationDuration = `${duration}s`;
@@ -113,16 +86,16 @@
         }
         
         function createManyFlowers() {
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 15; i++) {
                 setTimeout(createFlower, i * 500);
             }
         }
         
         setInterval(createManyFlowers, 2000);
-        
-        setTimeout(() => {
-            document.getElementById('message').style.animation = 'fadeIn 3s ease-in-out forwards';
-        }, 5000);
+
+        document.addEventListener('click', (event) => {
+            createFlower(event.clientX, event.clientY);
+        });
     </script>
 </body>
 </html>
