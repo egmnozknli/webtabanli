@@ -14,17 +14,29 @@
             margin: 20px auto;
             border-radius: 10px;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
     <h1>Ben de seni çok seviyorum! ❤️</h1>
     <p>Ben de öyle tahmin etmiştim zaten! 😊</p>
     <img src="ask.jpg" alt="Mutlu bir aşk görseli" class="love-image">
-    <button class="btn" onclick="goBack()">Geri Dön</button>
+    
+    <div class="button-container">
+        <button class="btn" onclick="goBack()">Geri Dön</button>
+        <button class="btn" onclick="goNext()">Sürpriz</button>
+    </div>
 
     <script>
         function goBack() {
             window.location.href = "index.html";
+        }
+        function goNext() {
+            window.location.href = "index3.html";
         }
     </script>
 </body>
