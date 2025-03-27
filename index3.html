@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çiçek Animasyonu</title>
+    <title>Senin İçin ❤️</title>
     <style>
         body {
             margin: 0;
             overflow: hidden;
-            background-color: #87CEEB;
+            background: linear-gradient(135deg, #9b4dca, #4b0082, #ff1493);
+            background-size: 400% 400%;
+            animation: gradientMove 8s ease infinite;
+            width: 100vw;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            flex-direction: column;
             position: relative;
+            transition: background 5s ease-in-out;
         }
-        .flower {
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .message-container {
+            position: absolute;
+            top: 10%;
+            z-index: 100;
+            text-align: center;
+        }
+
+        .message {
+            font-size: 2.5em;
+            color: white;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            animation: pulse 2s infinite alternate ease-in-out;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 25%;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .flower, .heart {
             position: absolute;
             top: -50px;
             display: flex;
@@ -26,6 +72,7 @@
             height: 50px;
             animation: fall linear infinite;
         }
+
         .petal {
             position: absolute;
             width: 20px;
@@ -33,6 +80,7 @@
             background-color: pink;
             border-radius: 50%;
         }
+
         .center {
             position: absolute;
             width: 15px;
@@ -40,62 +88,115 @@
             background-color: yellow;
             border-radius: 50%;
         }
+
+        .heart {
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            transform: rotate(-45deg);
+            position: absolute;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -12px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 12px;
+            top: 0;
+        }
+
         @keyframes fall {
-            0% {
-                transform: translateY(-100px) rotate(0deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(100vh) rotate(360deg);
-                opacity: 0;
-            }
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
         }
     </style>
 </head>
 <body>
+    <div class="message-container">
+        <div class="message">Seni Çok Seviyorum ❤️</div>
+    </div>
+    
+    <div class="image-container">
+        <img src="ask.jpg" alt="Romantic Image">
+    </div>
+    
+    <audio autoplay loop>
+        <source src="Aşk.mp3" type="audio/mp3">
+    </audio>
+
     <script>
-        function createFlower(x, y) {
+        function createHeart() {
+            let heart = document.createElement('div');
+            heart.classList.add('heart');
+            document.body.appendChild(heart);
+
+            let startPosX = Math.random() * window.innerWidth;
+            let duration = Math.random() * 5 + 3;
+
+            heart.style.left = `${startPosX}px`;
+            heart.style.animation = `fall ${duration}s linear infinite`;
+
+            setTimeout(() => { heart.remove(); }, duration * 1000);
+        }
+
+        function createFlower() {
             let flower = document.createElement('div');
             flower.classList.add('flower');
             document.body.appendChild(flower);
-            
-            let startPosX = x || Math.random() * window.innerWidth;
+
+            let startPosX = Math.random() * window.innerWidth;
             let duration = Math.random() * 5 + 3;
-            let size = Math.random() * 30 + 20;
             
             flower.style.left = `${startPosX}px`;
-            flower.style.top = `${y || -50}px`;
-            flower.style.width = `${size}px`;
-            flower.style.height = `${size}px`;
-            flower.style.animationDuration = `${duration}s`;
-            
+            flower.style.animation = `fall ${duration}s linear infinite`;
+
             for (let i = 0; i < 8; i++) {
                 let petal = document.createElement('div');
                 petal.classList.add('petal');
                 petal.style.transform = `rotate(${i * 45}deg) translateY(-15px)`;
                 flower.appendChild(petal);
             }
-            
+
             let center = document.createElement('div');
             center.classList.add('center');
             flower.appendChild(center);
-            
-            setTimeout(() => {
-                flower.remove();
-            }, duration * 1000);
+
+            setTimeout(() => { flower.remove(); }, duration * 1000);
         }
-        
-        function createManyFlowers() {
-            for (let i = 0; i < 15; i++) {
+
+        function createManyElements() {
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createHeart, i * 300);
                 setTimeout(createFlower, i * 500);
             }
         }
-        
-        setInterval(createManyFlowers, 2000);
 
-        document.addEventListener('click', (event) => {
-            createFlower(event.clientX, event.clientY);
+        setInterval(createManyElements, 2000);
+        document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.querySelector("audio");
+        
+        // Otomatik başlatmayı zorla
+        audio.play().catch(() => {
+            console.log("Tarayıcı otomatik oynatmayı engelledi. Kullanıcı etkileşimini bekliyor.");
         });
+
+        // Kullanıcı herhangi bir yere tıklarsa müziği başlat
+        document.body.addEventListener("click", function() {
+            audio.play();
+        });
+    });
     </script>
 </body>
 </html>
